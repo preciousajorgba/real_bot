@@ -167,10 +167,10 @@ def HA(df):
     except KeyError as e:
         print ( "The dataframe passed do not contain ['open', 'high', 'low', 'close'] columns" )
 
-# get real-time one-hour data
+# get real-time four-hour data
 def get_data():
     dat = []
-    pastdate = datetime.datetime.now() - datetime.timedelta(13)
+    pastdate = datetime.datetime.now() - datetime.timedelta(50)
     pastfourdate = datetime.datetime.now() - datetime.timedelta(3)
     presentdate = datetime.datetime.now()
    
